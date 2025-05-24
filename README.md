@@ -1,4 +1,4 @@
-# SpectralLLM: Post-Transformer Spectral Language Model
+# SpectralLLM: (Research Preview) Post-Transformer Spectral Language Model
 
 [![PyPI version](https://badge.fury.io/py/spectralllm.svg)](https://badge.fury.io/py/spectralllm)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
