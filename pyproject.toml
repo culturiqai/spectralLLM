@@ -1,0 +1,123 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectralllm"
+version = "0.1.0"
+description = "Spectral Architecture language model using wavelet transforms and spectral embeddings"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Aditya Tiwari", email = "aditya@culturiq.ai"}
+]
+maintainers = [
+    {name = "Culturiq AI", email = "contact@culturiq.ai"}
+]
+keywords = [
+    "language-model",
+    "spectral-analysis", 
+    "wavelet-transform",
+    "signal-processing",
+    "transformer",
+    "deep-learning",
+    "nlp"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Text Processing :: Linguistic"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.12.0",
+    "numpy>=1.21.0",
+    "tqdm>=4.64.0",
+    "matplotlib>=3.5.0",
+    "PyWavelets>=1.3.0",
+    "transformers>=4.20.0",
+    "datasets>=2.0.0",
+    "tensorboard>=2.8.0",
+    "scipy>=1.8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "isort>=5.10.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950"
+]
+docs = [
+    "sphinx>=4.5.0",
+    "sphinx-rtd-theme>=1.0.0",
+    "sphinx-autodoc-typehints>=1.17.0"
+]
+examples = [
+    "jupyter>=1.0.0",
+    "seaborn>=0.11.0",
+    "plotly>=5.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/culturiqai/spectralllm"
+Documentation = "https://spectralllm.culturiq.ai"
+Repository = "https://github.com/culturiqai/spectralllm"
+Issues = "https://github.com/culturiqai/spectralllm/issues"
+Changelog = "https://github.com/culturiqai/spectralllm/blob/main/CHANGELOG.md"
+
+[project.scripts]
+spectralllm-demo = "spectralllm.demo:main"
+spectralllm-train = "spectralllm.training.cli:main"
+spectralllm-eval = "spectralllm.evaluation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["spectralllm*"]
+
+[tool.setuptools.package-data]
+spectralllm = ["*.json", "*.yaml", "*.txt"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["spectralllm"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"] 
