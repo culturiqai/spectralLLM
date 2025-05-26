@@ -218,7 +218,7 @@ Traditional NLP: Discrete tokens → Attention → Prediction
 SpectralLLM:     Signals → Spectral Processing → Generation
 ```
 
-## 🎯 Use Cases
+## 🎯 Potential Use Cases 
 
 ### **Optimal Applications:**
 - **Signal-heavy text**: Technical documents, code, mathematical content
@@ -227,8 +227,6 @@ SpectralLLM:     Signals → Spectral Processing → Generation
 - **Efficient inference**: Resource-constrained environments
 
 ### **Performance Gains:**
-- **Technical text**: 15-20% better perplexity
-- **Code generation**: Superior pattern recognition
 - **Mathematical content**: Enhanced structural understanding
 
 ## 🤝 Contributing
