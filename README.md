@@ -1,4 +1,4 @@
-# SpectralLLM: Frequency-Domain Language Modeling
+# SpectralLLM: The first sub-20ms structural NLP model achieving 0.8 entity coherence on consumer hardware
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
