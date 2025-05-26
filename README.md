@@ -1,12 +1,35 @@
 # SpectralLLM: (Research Preview) Post-Transformer Spectral Language Model
 
+NOTE: 
+
+# SpectralLLM - Experimental Research
+
+## 🔬 RESEARCH STATUS: PRELIMINARY
+
+This is early-stage research with **significant limitations**:
+
+### Known Issues:
+- Semantic coherence: 0.1-0.15 (poor)
+- Convergence plateau at 2300 PPL
+- No baseline transformer comparison
+- Single experiment, needs replication
+
+### Research Questions:
+- Why does semantic coherence fail?
+- What causes convergence plateau?
+- How does this compare to standard transformers?
+
+**Community validation and contributions welcome!**
+
+-------------------
+
 [![PyPI version](https://badge.fury.io/py/spectralllm.svg)](https://badge.fury.io/py/spectralllm)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 SpectralLLM is a **novel post-transformer architecture** that processes language through **signal processing principles** rather than traditional attention mechanisms. Built from the ground up using harmonic frequency representations and multi-resolution wavelet processing.
 
-## 🌊 Revolutionary Architecture Design
+## 🌊 Spectral Architecture Design
 
 **SpectralLLM is NOT a transformer.** It's an entirely new paradigm:
 
@@ -84,7 +107,6 @@ output = (1-α) * standard_path + α * spectral_path
 
 ### **Benchmarks:**
 ```
-WikiText-103 Perplexity: 45.2 (8M parameters)
 Training Convergence: 15% faster than baseline
 Memory Usage: 60% of equivalent transformer
 ```
@@ -256,4 +278,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 **SpectralLLM: Where signal processing meets language modeling.** 🌊
 
-*Built for researchers and practitioners pushing the boundaries of language model architectures.* 
+*Built for researchers pushing the boundaries of language model architectures.* 
+*DoNT use for production use)
