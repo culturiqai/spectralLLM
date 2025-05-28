@@ -220,9 +220,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Email**: your.email@domain.com
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+- Email : aditya.tiwari.jsr@gmail.com
 
 ---
 
