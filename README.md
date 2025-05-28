@@ -1,4 +1,4 @@
-# SpectralLLM: The first sub-20ms structural NLP model achieving 0.8 entity coherence on consumer hardware
+# SpectralLLM: Experimental sub-20ms structural NLP model achieving 0.8 entity coherence on consumer hardware
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -9,7 +9,7 @@
 
 ## 🌊 Overview
 
-SpectralLLM introduces a groundbreaking paradigm for language modeling by representing tokens as **superpositions of frequency components** rather than traditional embedding vectors. Our research demonstrates that frequency-domain processing can capture sophisticated linguistic structures, achieving **0.8 entity coherence** while revealing fundamental insights about language representation.
+SpectralLLM introduces an experimental paradigm for language modeling by representing tokens as **superpositions of frequency components** rather than traditional embedding vectors. Our research demonstrates that frequency-domain processing can capture sophisticated linguistic structures, achieving **0.8 entity coherence** while revealing fundamental insights about language representation.
 
 ### Key Innovation: Spectral Token Embeddings
 
